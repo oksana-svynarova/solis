@@ -506,7 +506,7 @@ textarea {
   background: url("../assets/img/first-screen-img-light.webp") no-repeat center/cover;
 }
 .light-mode .error-section::after {
-  background: url("../assets/img/error-404-light-mode.webp") no-repeat center/contain;
+  background: url("../assets/img/error-404-light-mode.webp") no-repeat bottom/contain;
 }
 
 @keyframes appearErrorScreen {
@@ -535,7 +535,7 @@ textarea {
   right: 0;
   bottom: 0;
   height: 95%;
-  background: url("../assets/img/error-404.webp") no-repeat center/contain;
+  background: url("../assets/img/error-404.webp") no-repeat bottom/contain;
   animation: appearErrorScreen 2s;
 }
 @media screen and (max-width: 992px) {
@@ -572,17 +572,17 @@ textarea {
 }
 @media screen and (max-width: 768px) {
   .error__title {
-    top: 35vw;
+    top: 30vw;
   }
 }
 @media screen and (max-width: 576px) {
   .error__title {
-    top: 40vw;
+    top: 50vw;
   }
 }
 @media screen and (max-width: 320px) {
   .error__title {
-    top: 45vw;
+    top: 60vw;
   }
 }
 
@@ -597,7 +597,7 @@ textarea {
 
 .error__text {
   position: absolute;
-  bottom: 5vw;
+  bottom: 10vw;
   left: 0;
   right: 0;
   text-align: center;
@@ -605,6 +605,11 @@ textarea {
   font-size: clamp(18px, 6.25vw, 90px);
   z-index: 2;
   animation: appearErrorScreen 3.5s;
+}
+@media screen and (max-width: 320px) {
+  .error__text {
+    bottom: 20vw;
+  }
 }
 
 * {
@@ -874,13 +879,24 @@ html, body {
   position: relative;
   z-index: 1;
 }
+@media screen and (max-width: 576px) {
+  .info-section {
+    margin-top: 70vh;
+  }
+}
 .info-section__img-wrapper {
   width: 100%;
   max-width: 570px;
 }
 @media screen and (max-width: 768px) {
   .info-section__img-wrapper {
+    width: 50%;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .info-section__img-wrapper {
+    width: 80%;
   }
 }
 .info-section__content {
@@ -991,6 +1007,11 @@ html, body {
   border-top: 1px solid #515773;
   max-height: 31.53vh;
   margin-bottom: 10%;
+}
+@media screen and (max-width: 768px) {
+  .benefits-section__article {
+    margin-bottom: 0;
+  }
 }
 .benefits-section__title {
   font-size: clamp(28px, 2.8vw, 40px);
@@ -1174,7 +1195,13 @@ html, body {
 }
 @media screen and (max-width: 768px) {
   .promises-section__img-wrapper {
+    width: 50%;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .promises-section__img-wrapper {
+    width: 80%;
   }
 }
 .promises-section__content {
@@ -1232,6 +1259,12 @@ html, body {
   height: 90px;
   border: 1px solid #515773;
   transition: all 0.3s;
+}
+@media screen and (max-width: 576px) {
+  .btn--border {
+    width: 200px;
+    height: 70px;
+  }
 }
 .btn--border:hover {
   border: 1px solid #02E0AB;

@@ -282,12 +282,21 @@ html, body {
   position: relative;
   z-index: 1;
 
+  @media screen and (max-width: 576px) {
+    margin-top: 70vh;
+  }
+
   &__img-wrapper {
     width: 100%;
     max-width: 570px;
 
     @media screen and (max-width: 768px) {
+      width: 50%;
       margin: 0 auto;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 80%;
     }
   }
 
@@ -401,6 +410,10 @@ html, body {
     border-top: 1px solid vars.$border-color;
     max-height: 31.53vh;
     margin-bottom: 10%;
+
+    @media screen and (max-width: 768px){
+      margin-bottom: 0;
+    }
   }
 
   &__title {
@@ -591,7 +604,12 @@ html, body {
     max-width: 600px;
 
     @media screen and (max-width: 768px) {
+      width: 50%;
       margin: 0 auto;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 80%;
     }
   }
 
@@ -653,6 +671,11 @@ html, body {
   height: 90px;
   border: 1px solid vars.$border-color;
   transition: all 0.3s;
+
+  @media screen and (max-width: 576px) {
+    width: 200px;
+    height: 70px;
+  }
 
   &:hover {
     border: 1px solid vars.$color-hover;

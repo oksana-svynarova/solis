@@ -169,7 +169,7 @@
     background: url("../assets/img/first-screen-img-light.webp") no-repeat center / cover;
 
     &::after {
-      background: url("../assets/img/error-404-light-mode.webp") no-repeat center / contain;
+      background: url("../assets/img/error-404-light-mode.webp") no-repeat bottom / contain;
     }
   }
 }

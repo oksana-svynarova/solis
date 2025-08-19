@@ -16,7 +16,7 @@
     right: 0;
     bottom: 0;
     height: 95%;
-    background: url("../assets/img/error-404.webp") no-repeat center / contain;
+    background: url("../assets/img/error-404.webp") no-repeat bottom / contain;
     animation: appearErrorScreen 2s;
 
     @media screen and (max-width: 992px) {
@@ -49,15 +49,15 @@
   }
 
   @media screen and (max-width: 768px) {
-    top: 35vw;
+    top: 30vw;
   }
 
   @media screen and (max-width: 576px) {
-    top: 40vw;
+    top: 50vw;
   }
 
   @media screen and (max-width: 320px) {
-    top: 45vw;
+    top: 60vw;
   }
 }
 
@@ -71,7 +71,7 @@
 
 .error__text {
   position: absolute;
-  bottom: 5vw;
+  bottom: 10vw;
   left: 0;
   right: 0;
   text-align: center;
@@ -79,4 +79,8 @@
   font-size: clamp(18px, 6.25vw, 90px);
   z-index: 2;
   animation: appearErrorScreen 3.5s;
+
+  @media screen and (max-width: 320px) {
+    bottom: 20vw;
+  }
 }
