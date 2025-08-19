@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found</title>
+  <link rel="shortcut icon" href="../../assets/img/svg/logo.svg" type="image/svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="flex-container">
+      <div class="logo">
+        <a href="#" class="logo__link">
+          <img src="../../assets/img/svg/logo.svg" alt="" class="logo__img">
+          <img src="../../assets/img/svg/solis.svg" alt="" class="logo__text">
+        </a>
+      </div>
+      <nav class="nav flex-container">
+        <input type="checkbox" class="nav__burger burger" id="nav-burger" hidden>
+        <label for="nav-burger" class="burger__label">
+          <span class="burger__line"></span>
+        </label>
+        <ul class="menu flex-container">
+          <li class="menu__item">
+            <a href="../../index.html" class="menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link active">About</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Products</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Use Cases</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Pricing</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Resources</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="switch-mode">
+        <svg class="switch-mode__dark-icon" width="24" height="24">
+          <use href="../../assets/img/sprite/sprite.svg#dark-mode"></use>
+        </svg>
+        <svg class="switch-mode__light-icon" width="24" height="24">
+          <use href="../../assets/img/sprite/sprite.svg#light-mode"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="error-section">
+      <h2 class="error__title">
+        4<span class="opacity">0</span>4
+      </h2>
+      <p class="error__text title--italic-color">
+        Whoops!
+      </p>
+    </section>
+  </main>
+  <script src="../../js/switchmode.js"></script>
+</body>
+</html>

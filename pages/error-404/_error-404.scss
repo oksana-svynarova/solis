@@ -1,0 +1,82 @@
+.error-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../assets/img/first-screen-img-dark.webp") no-repeat center / cover;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 40vh;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 95%;
+    background: url("../assets/img/error-404.webp") no-repeat center / contain;
+    animation: appearErrorScreen 2s;
+
+    @media screen and (max-width: 992px) {
+      height: 85%;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 75%;
+    }
+
+    @media screen and (max-width: 576px) {
+      height: 65%;
+    }
+  }
+}
+
+.error__title {
+  position: absolute;
+  top: 25vw;
+  left: 0;
+  right: 0;
+  font-size: clamp(26px, 41.7vw, 600px);
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.05em;
+  animation: appearErrorScreen 3.5s;
+
+  @media screen and (max-width: 992px) {
+    top: 30vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    top: 35vw;
+  }
+
+  @media screen and (max-width: 576px) {
+    top: 40vw;
+  }
+
+  @media screen and (max-width: 320px) {
+    top: 45vw;
+  }
+}
+
+.opacity {
+  opacity: 0;
+
+  @media screen and (max-width: 992px) {
+    opacity: 1;
+  }
+}
+
+.error__text {
+  position: absolute;
+  bottom: 5vw;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: clamp(18px, 6.25vw, 90px);
+  z-index: 2;
+  animation: appearErrorScreen 3.5s;
+}
