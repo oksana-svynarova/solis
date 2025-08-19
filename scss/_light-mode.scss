@@ -1,0 +1,175 @@
+@use "vars";
+
+.light-mode {
+  color: vars.$text-color-main-light-mode;
+  background: vars.$bg-color-light;
+
+  .header {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+  }
+
+  .menu {
+
+    @media screen and (max-width: 992px) {
+      background: vars.$bg-color-light;
+    }
+
+    &__link {
+      &::after {
+        background: linear-gradient(96.73deg, #F1897B 6.73%, rgba(83, 243, 205, 0) 116.9%);
+      }
+
+      &:focus::after {
+        background: linear-gradient(96.73deg, #85BBB1 6.73%, rgba(83, 243, 205, 0) 116.9%);
+      }
+    }
+  }
+
+  .burger__label::after, .burger__label::before, .burger__label .burger__line {
+    background: vars.$text-color-main-light-mode;
+  }
+
+  .switch-mode {
+    &:hover {
+      color: vars.$color-hover-light-mode;
+    }
+
+    &:focus {
+      color: vars.$color-focus-light-mode;
+    }
+
+    &__light-icon {
+      display: block;
+    }
+
+    &__dark-icon {
+      display: none;
+    }
+  }
+
+  .hero-section {
+    background: url("../assets/img/first-screen-img-light.webp") no-repeat center / cover;
+
+    &::after {
+      background: linear-gradient(183.11deg, rgba(255, 255, 255, 0) 46.73%, #FFFFFF 63.21%);
+    }
+  }
+
+  .title--italic-color {
+    color: vars.$title-italic-green;
+  }
+
+  .btn {
+    color: vars.$btn-color-main-light-mode;
+
+    &:hover {
+      color: vars.$color-hover-light-mode;
+    }
+
+    &:focus {
+      color: vars.$color-focus-light-mode;
+    }
+
+    &:hover .btn__text::after {
+      background: vars.$color-hover-light-mode;
+    }
+
+    &:focus .btn__text::after{
+      background: vars.$color-focus-light-mode;
+    }
+
+    .btn__text {
+
+      &::after {
+        background: vars.$btn-color-main-light-mode;
+      }
+    }
+  }
+
+  .info-section__content {
+    background: vars.$bg-color-light;
+  }
+
+  .dollar__icon{
+    color: #E4E4E4;
+  }
+
+  .benefits-section__article {
+    border-top: 1px solid vars.$border-color-light-mode;
+  }
+
+  .quote__icon--light {
+    opacity: 1;
+  }
+
+  .quote__icon--dark {
+    opacity: 0;
+  }
+
+  .player {
+    border: 1px solid vars.$border-color-light-mode;
+
+    &::before,
+    &::after {
+      border: 1px solid vars.$border-color-light-mode;
+    }
+  }
+
+  .play-btn {
+    color: vars.$text-color-main-light-mode;
+
+    &:hover {
+      color: vars.$color-focus-light-mode;
+    }
+
+    &:focus {
+      color: vars.$bg-color-light;
+    }
+  }
+
+  .promises-section__content {
+    background: vars.$bg-color-light;
+  }
+
+  .btn--border {
+    border: 1px solid vars.$border-color-light-mode;
+
+    &:hover {
+      border: 1px solid vars.$color-hover-light-mode;
+    }
+
+    &:focus {
+      border: 1px solid vars.$color-focus-light-mode;
+    }
+  }
+
+  .contact-section {
+    border-top: 1px solid vars.$border-color-light-mode;
+  }
+
+  .form__input {
+    border-bottom: 1px solid #262A3F1A;
+  }
+
+  .footer {
+    border-top: 1px solid vars.$border-color-light-mode;
+  }
+
+  .footer__link {
+    &:hover {
+      color: vars.$color-hover-light-mode;
+    }
+
+    &:focus {
+      color: vars.$color-focus-light-mode;
+    }
+  }
+
+  .error-section {
+    background: url("../assets/img/first-screen-img-light.webp") no-repeat center / cover;
+
+    &::after {
+      background: url("../assets/img/error-404-light-mode.webp") no-repeat center / contain;
+    }
+  }
+}

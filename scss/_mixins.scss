@@ -1,0 +1,10 @@
+@mixin flex-center($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin grid-container ($count, $size) {
+  display: grid;
+  grid-template-columns: repeat($count, $size);
+}
