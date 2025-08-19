@@ -989,7 +989,8 @@ html, body {
 .benefits-section__article {
   padding: 8.774% 7.02% 5.265%;
   border-top: 1px solid #515773;
-  height: 21.53vw;
+  max-height: 31.53vh;
+  margin-bottom: 10%;
 }
 .benefits-section__title {
   font-size: clamp(28px, 2.8vw, 40px);

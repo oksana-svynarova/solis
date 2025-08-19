@@ -399,7 +399,8 @@ html, body {
   &__article {
     padding: 8.774% 7.02% 5.265%;
     border-top: 1px solid vars.$border-color;
-    height: 21.53vw;
+    max-height: 31.53vh;
+    margin-bottom: 10%;
   }
 
   &__title {
